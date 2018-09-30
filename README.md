@@ -1,6 +1,6 @@
 # adopt_a_drain
 
-> My first-rate Nuxt.js project
+> My premium Nuxt.js project
 
 ## Build Setup
 
