@@ -15,10 +15,12 @@ $ npm run dev
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
 
+## Prerequisites
+* Get a Google Map App Key
 
 ## Environment Variables
-Create a file to hold your tokens and user info.
-
+Create a file (.env) to hold your tokens and user info. 
+> adopt_a_drain/.env
 ```
 # Override database settings as the docker host:
 echo DB_HOST=db > .env
