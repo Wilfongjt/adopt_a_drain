@@ -1,16 +1,17 @@
 <template>
   <section class="container">
-    <Home />
-    <Video />
+    <About />
+
   </section>
 </template>
+
 <script>
-import Home from '@/components/Home.vue'
-import Video from '@/components/Video.vue'
+import About from '@/components/About.vue'
+
 export default {
   components: {
-    Home,
-    Video
+    About
+    
   }
 }
 </script>

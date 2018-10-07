@@ -1,7 +1,13 @@
 const pkg = require('./package')
+/* do not use dotenv in production env  */
+if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
+  env: {
+    GOOGLE_MAPS_JAVASCRIPT_API_KEY: process.env.GOOGLE_MAPS_JAVASCRIPT_API_KEY,
+    DEVSITE: 'dev.site'
+  },
 
   /*
   ** Headers of the page
@@ -33,16 +39,16 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/vue2-google-maps.js' }
   ],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/dotenv',
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
-    // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    '@nuxtjs/axios'
   ],
   /*
   ** Axios module configuration
@@ -59,15 +65,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
+      
     }
   }
 }
