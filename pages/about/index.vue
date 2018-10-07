@@ -1,17 +1,18 @@
 <template>
   <section class="container">
     <About />
-
+    <Stats />
   </section>
 </template>
 
 <script>
 import About from '@/components/About.vue'
+import Stats from '@/components/Stats.vue'
 
 export default {
   components: {
-    About
-    
+    About,
+    Stats
   }
 }
 </script>

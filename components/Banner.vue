@@ -1,17 +1,16 @@
 <template>
   <div class="band">
     <h1 class="title">
-      About
+      About Adopt a Drain
     </h1>
     <h2 class="subtitle">
-      How much do we care?
+      We Care
     </h2>
   </div>
 </template>
 
 <script>
 export default {
-
   data() {
     return {
       name: 'xcon'
@@ -23,6 +22,6 @@ export default {
 <style scoped>
 .band {
   width: 100%;
-  background-color: #ffffff;
+  background: url("~/assets/banner.png")
 }
 </style>

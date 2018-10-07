@@ -1,8 +1,6 @@
 <template>
   <div class="band">
-    <h1 class="title">
-      Adopt a Drain
-    </h1>
+    <Logo />
     <h2 class="subtitle">
       We care about our water!
     </h2>
@@ -10,7 +8,11 @@
 </template>
 
 <script>
+import Logo from "@/components/Logo.vue"
 export default {
+  components: {
+    Logo
+  },
   data() {
     return {
       name: 'xcon'
@@ -22,6 +24,6 @@ export default {
 <style scoped>
 .band {
   width: 100%;
-  background-color: #ffffff;
 }
+
 </style>
