@@ -1,25 +1,24 @@
 <template>
   <section class="container">
     <Home />
-    <Video />
+    <Stats />
   </section>
 </template>
 <script>
 import Home from '@/components/Home.vue'
-import Video from '@/components/Video.vue'
+import Stats from '@/components/Stats.vue'
 export default {
   components: {
     Home,
-    Video
+    Stats
   }
 }
 </script>
 <style>
 .container {
-  min-height: 50vh;
+  min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }

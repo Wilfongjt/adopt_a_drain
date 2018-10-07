@@ -1,7 +1,7 @@
 <template>
   <div class="band">
     <h1 class="title">
-      About
+      Stats
     </h1>
     <h2 class="subtitle">
       How much do we care?
@@ -11,7 +11,6 @@
 
 <script>
 export default {
-
   data() {
     return {
       name: 'xcon'
