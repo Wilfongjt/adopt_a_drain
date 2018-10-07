@@ -2,9 +2,21 @@
 
 > My superb Nuxt.js project
 
+## Prerequisites
+* Get a Google Map App Key
+* Install nodejs
+
+## Clone me
+``` bash 
+# clone adopt_a_drain repo
+$ git clone https://github.com/Wilfongjt/adopt_a_drain.git
+```
 ## Build Setup
 
 ``` bash
+# move to app folder
+$ cd adopt_a_drain
+
 # install dependencies
 $ npm install
 
@@ -14,9 +26,6 @@ $ npm run dev
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
-
-## Prerequisites
-* Get a Google Map App Key
 
 ## Environment Variables
 Create a file (.env) to hold your tokens and user info. 
