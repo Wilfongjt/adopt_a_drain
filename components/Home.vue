@@ -1,6 +1,6 @@
 <template>
   <div class="band">
-    <Logo />
+    <Banner />
     <h2 class="subtitle">
       We care about our water!
     </h2>
@@ -8,15 +8,10 @@
 </template>
 
 <script>
-import Logo from "@/components/Logo.vue"
+import Banner from "@/components/Banner.vue"
 export default {
   components: {
-    Logo
-  },
-  data() {
-    return {
-      name: 'xcon'
-    }
+    Banner
   }
 }
 </script>

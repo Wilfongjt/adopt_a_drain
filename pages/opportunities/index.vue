@@ -1,23 +1,24 @@
 <template>
   <section class="container">
-    <Home />
-
+    <Opportunities />
   </section>
 </template>
+
 <script>
-import Home from '@/components/Home.vue'
+import Opportunities from '@/components/Opportunities.vue'
 
 export default {
   components: {
-    Home
+    Opportunities
   }
 }
 </script>
 <style>
 .container {
-  min-height: 10vh;
+  min-height: 50vh;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -37,15 +38,7 @@ export default {
   word-spacing: 5px;
   padding-bottom: 15px;
 }
-.description {
-  font-weight: 300;
-  font-size: 18px;
-  color: #333333;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
 .links {
   padding-top: 15px;
 }
-
 </style>

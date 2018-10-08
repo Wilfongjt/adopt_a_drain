@@ -1,23 +1,25 @@
 <template>
   <section class="container">
-    <Home />
+    <Sponsors />
 
   </section>
 </template>
+
 <script>
-import Home from '@/components/Home.vue'
+import Sponsors from '@/components/Sponsors.vue'
 
 export default {
   components: {
-    Home
+    Sponsors
   }
 }
 </script>
 <style>
 .container {
-  min-height: 10vh;
+  min-height: 50vh;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -37,15 +39,10 @@ export default {
   word-spacing: 5px;
   padding-bottom: 15px;
 }
-.description {
-  font-weight: 300;
-  font-size: 18px;
-  color: #333333;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
 .links {
   padding-top: 15px;
 }
-
+img {
+  height: 100px
+}
 </style>
