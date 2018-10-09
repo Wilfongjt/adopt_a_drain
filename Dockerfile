@@ -1,5 +1,7 @@
-FROM node:8
+FROM node:8.11.3
 # https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+ENV NODE_ENV=production
+
 # Create app directory
 RUN mkdir /usr/src/app
 
@@ -8,6 +10,8 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm install
+RUN npm run build
+
 RUN ls /usr/src/app
 
 # bundler app source
@@ -15,7 +19,7 @@ COPY . .
 
 EXPOSE 3000
 
-RUN $PATH
+RUN echo $PATH
 
 CMD ["npm", "start"]
 
@@ -33,7 +37,7 @@ CMD ["npm", "start"]
 # docker run -p 3000:3000 -d adopt_a_drain .
 # docker run -p 3000:3000 -d jameswilfong/adopt_a_drain .
 # docker ps
-# docker rm adopt_a_drain
+# docker rmi <image-id>
 
 #RUN npm run build
 
