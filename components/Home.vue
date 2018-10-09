@@ -2,7 +2,7 @@
   <div class="band">
     <Banner />
     <h2 class="subtitle">
-      We care about our water!
+      Volunteer to keep street drain clear and clean.
     </h2>
   </div>
 </template>

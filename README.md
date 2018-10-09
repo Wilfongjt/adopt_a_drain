@@ -47,3 +47,8 @@ echo DW_AUTH_TOKEN=<get-data.world-api-token> >> .env
 # URL for drain data
 echo OPEN_SOURCE=https://api.data.world/v0/sql/citizenlabs/grb-storm-drains >> .env
 ```
+## Dockers
+Pull it all together with a container
+```
+
+```
