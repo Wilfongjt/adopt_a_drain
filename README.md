@@ -3,8 +3,9 @@
 > My superb Nuxt.js project
 
 ## Prerequisites
-* Get a Google Map App Key
-* Install nodejs
+* Get a Google Map [App Key](https://developers.google.com/maps/documentation/javascript/get-api-key)
+* Install [node and npm](https://www.npmjs.com/get-npm) 
+
 
 ## Clone me
 ``` bash 
