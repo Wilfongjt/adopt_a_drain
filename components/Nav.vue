@@ -4,20 +4,19 @@
     <ul>
       <li><nuxt-link to="/">Home</nuxt-link></li>
       <li><nuxt-link to="/adopt">Adopt</nuxt-link></li>
-      <li><nuxt-link to="/about">About</nuxt-link></li>
     </ul>
   </nav>
 
 </template>
 
 <style scoped>
-header {
+/* header {
   width: 100%;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 ul {
   list-style: none;

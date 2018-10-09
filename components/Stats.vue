@@ -1,19 +1,26 @@
 <template>
   <div class="band">
+    <Banner />
     <h1 class="title">
-      Stats
+      {{ title }}
     </h1>
     <h2 class="subtitle">
-      How much do we care?
+      {{ subtitle }}
     </h2>
   </div>
 </template>
 
 <script>
+import Banner from "@/components/Banner.vue"
+
 export default {
+  components: {
+    Banner
+  },
   data() {
     return {
-      name: 'xcon'
+      title: 'Stats',
+      subtitle: 'How much do we care?'
     }
   }
 }

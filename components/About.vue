@@ -1,20 +1,29 @@
 <template>
   <div class="band">
+    <Banner />
     <h1 class="title">
-      About
+      {{ about.title }}
     </h1>
     <h2 class="subtitle">
-      How much do we care?
+      {{ about.subtitle }}
     </h2>
+
   </div>
 </template>
 
 <script>
-export default {
+import Banner from "@/components/Banner.vue"
 
+export default {
+  components: {
+    Banner
+  },
   data() {
     return {
-      name: 'xcon'
+      about: {
+        title: 'About',
+        subtitle: 'We are concerned citizens.'
+      }
     }
   }
 }
