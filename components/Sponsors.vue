@@ -8,8 +8,8 @@
       {{ subtitle }}
     </h2>
     <ul>
-      <li><a href="https://www.lgrow.org" target="_blank"><img src="~assets/logos/LGrow.png" /></a></li>
-      <li><a href="https://citizenlabs.org" target="_blank"><img src="~assets/logos/citizenlabs.png" /></a></li>
+      <li><a href="https://www.lgrow.org" target="_blank"><img src="~assets/logos/LGrow.png" class="img_sponsor" /></a></li>
+      <li><a href="https://citizenlabs.org" target="_blank"><img src="~assets/logos/citizenlabs.png" class="img_sponsor" /></a></li>
     </ul>
 
   </div>
@@ -50,9 +50,8 @@ ul {
 li {
   margin: 20px 20px;
 }
-/*
-img {
-  height: 70px
+.img_sponsor {
+  height: 100px
 }
-*/
+
 </style>
