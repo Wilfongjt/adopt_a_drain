@@ -29,6 +29,6 @@ export default {
 <style scoped>
 .band {
   width: 100%;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <img src="~assets/banner.png" />
+    <img src="~assets/banner.png" class="img_banner" />
   </div>
 </template>
 
 <style scoped>
-img {
-  max-width: 100%;
+.img_banner {
+  max-width: 700px;
   max-height: 100%;
 }
 </style>

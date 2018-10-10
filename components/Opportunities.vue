@@ -1,7 +1,7 @@
 <template>
   <div class="band">
     <Banner />
-    <h1 class="opportunities.title">
+    <h1 class="title">
       {{ opportunities.title }}
     </h1>
     <h2 class="subtitle">
@@ -56,7 +56,6 @@ export default {
 <style scoped>
 .band {
   width: 100%;
-  background-color: #ffffff;
 }
 
 ul {
