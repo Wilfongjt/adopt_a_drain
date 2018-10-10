@@ -27,7 +27,7 @@ export default {
     return {
       adopt: {
         title: 'Adopt',
-        subtitle: 'Pick your drain.',
+        subtitle: 'Find a drain near you and adopt it.',
         center: { lat: 42.9634, lng: -85.6681 },
         markers: [
           { position: { lat: -0.48585, lng: 117.1466 } },
@@ -39,15 +39,3 @@ export default {
 
 }
 </script>
-
-<style lang="scss" scoped>
-/* .band {
-  width: 100%;
-  background-color: #000000;
-  border-style: solid;
-}*/
-/*.vue-map-container {
-  height: 450px;
-  max-width: 992px;
-  width: 100%;
-}*/

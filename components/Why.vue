@@ -1,5 +1,5 @@
 <template>
-  <!-- div class="band" -->
+  <div class="band">
 
     <nav>
       <ul>
@@ -44,7 +44,7 @@
         </li>
       </ul>
     </nav>
-  <!-- /div -->
+  </div>
 
 </template>
 
@@ -91,7 +91,9 @@ export default {
 <style scoped>
 .band {
   /*width: 100%;*/
-  background-color: #cccccc;
+  /*background-color: #cccccc;*/
+  align-items: center;
+  text-align: center;
 
 }
 .panel {
