@@ -15,7 +15,7 @@ export default {
 
 <style scoped>
 
-.map-section {
+.section-map {
   min-height: 50vh;
   /*display: flex;
   flex-flow: column nowrap;

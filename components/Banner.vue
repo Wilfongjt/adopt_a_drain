@@ -6,7 +6,7 @@
 
 <style scoped>
 .img_banner {
-  max-width: 700px;
-  max-height: 100%;
+  max-width: 100%;
+  max-height: 150px;
 }
 </style>
