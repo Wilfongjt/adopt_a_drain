@@ -1,14 +1,24 @@
 <template>
   <section class="section-map">
-    <MapAdopt />
+    <Authenticate v-if="!authorized"/>
+    <MapAdopt v-if="authorized" />
+
   </section>
 </template>
 
 <script>
 import MapAdopt from '@/components/MapAdopt.vue'
+import Authenticate from '@/components/Authenticate.vue'
 export default {
   components: {
-    MapAdopt
+    MapAdopt,
+    Authenticate
+  },
+  computed: {
+    authorized: function () {
+      if ( !this.$store.state.authenticated ){ return false }
+      return true
+    }
   }
 }
 </script>
