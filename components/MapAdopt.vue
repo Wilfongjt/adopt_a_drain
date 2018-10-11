@@ -1,8 +1,12 @@
 <template>
-  <div>
+
+  <div v-if="authorized">
+    <Banner />
+
     <h1 class="title">
       {{ adopt.title }}
     </h1>
+
     <h2 class="subtitle">
       {{ adopt.subtitle }}
     </h2>
@@ -12,17 +16,23 @@
       v-bind:zoom="10"
       style="height: 550px"
     >
-    <gmap-marker
-      v-for="(item, index) in adopt.markers"
-      v-bind:key="index"
-      v-bind:position="item.position"
-      v-on:click="center=item.position"/>
+      <gmap-marker
+        v-for="(item, index) in adopt.markers"
+        v-bind:key="index"
+        v-bind:position="item.position"
+        v-on:click="center=item.position"/>
     </gmap-map>
+
   </div>
+
 </template>
 
 <script>
+import Banner from '@/components/Banner.vue'
 export default {
+  components: {
+    Banner
+  },
   data() {
     return {
       adopt: {
@@ -34,6 +44,12 @@ export default {
           { position: { lat: -6.21462, lng: 106.84513 } }
         ]
       }
+    }
+  },
+  computed: {
+    authorized: function () {
+      if ( !this.$store.state.authenticated ){ return false }
+      return true
     }
   }
 
