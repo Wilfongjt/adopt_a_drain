@@ -2,7 +2,7 @@
 
   <div v-if="authorized">
     <Banner />
-
+    !Use for google key confirmation!
     <h1 class="title">
       {{ adopt.title }}
     </h1>
@@ -28,6 +28,10 @@
 </template>
 
 <script>
+/*
+  MapAdopt is a placeholder for a map.
+  Use it to test your google map key configuration
+*/
 import Banner from '@/components/Banner.vue'
 export default {
   components: {

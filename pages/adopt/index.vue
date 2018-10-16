@@ -1,17 +1,18 @@
 <template>
   <section class="section-map">
     <Authenticate v-if="!authorized"/>
-    <MapAdopt v-if="authorized" />
-
+    <!-- MapAdopt v-if="authorized" / -->
+    <DrainAdoption v-if="authorized" />
   </section>
 </template>
 
 <script>
-import MapAdopt from '@/components/MapAdopt.vue'
+// import MapAdopt from '@/components/MapAdopt.vue'
+import DrainAdoption from '@/components/DrainAdoption.vue'
 import Authenticate from '@/components/Authenticate.vue'
 export default {
   components: {
-    MapAdopt,
+    DrainAdoption,
     Authenticate
   },
   computed: {
