@@ -4,8 +4,30 @@
 
 ## Prerequisites
 * Get a Google Map [App Key](https://developers.google.com/maps/documentation/javascript/get-api-key)
+* Get a Data.World [API key](https://data.world)  
 * Install [node and npm](https://www.npmjs.com/get-npm) 
 
+## Environment Variables
+Developers should create a file (.env) to hold your tokens and user info. 
+> adopt_a_drain/.env
+
+```
+# Override database settings as the docker host:
+echo DB_HOST=db > .env
+echo DB_USER=postgres >> .env
+
+# Enable google maps with your dev or prod google map api key
+echo GOOGLE_MAPS_JAVASCRIPT_API_KEY=<get-google-map-api-key> >> .env
+
+# Provide an owner id for the drain data.
+echo DW_USER=citizenlabs
+
+# Enable data.world data with your "read/write" api token
+echo DW_AUTH_TOKEN=<get-data.world-api-token> >> .env
+
+# URL for drain data
+echo OPEN_SOURCE=https://api.data.world/v0/sql/citizenlabs/grb-storm-drains >> .env
+```
 
 ## Clone me
 ``` bash 
@@ -28,28 +50,12 @@ $ npm run dev
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
 
-## Environment Variables
-Create a file (.env) to hold your tokens and user info. 
-> adopt_a_drain/.env
+## Docker (alternative to Build Setup)
+Skip the Build Setup and pull it all together with a container
 ```
-# Override database settings as the docker host:
-echo DB_HOST=db > .env
-echo DB_USER=postgres >> .env
-
-# Enable google maps with your dev or prod google map api key
-echo GOOGLE_MAPS_JAVASCRIPT_API_KEY=<get-google-map-api-key> >> .env
-
-# Provide an owner id for the drain data.
-echo DW_USER=citizenlabs
-
-# Enable data.world data with your "read/write" api token
-echo DW_AUTH_TOKEN=<get-data.world-api-token> >> .env
-
-# URL for drain data
-echo OPEN_SOURCE=https://api.data.world/v0/sql/citizenlabs/grb-storm-drains >> .env
-```
-## Dockers
-Pull it all together with a container
+cd adopt_a_drain/
+docker run -p 3000:3000 adopt_a_drain
 ```
 
-```
+
+
