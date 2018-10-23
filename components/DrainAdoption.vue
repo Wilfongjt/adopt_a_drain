@@ -24,7 +24,7 @@
           :animation="m.animation"
 
           :position="m.position"
-          
+
           :draggable="m.draggable"
           :clickable="m.clickable"
 
@@ -102,7 +102,7 @@ export default {
     doDragEnd () {
       /*
       Objective:
-      * Avoid downloading all drains at on timeout
+      * Avoid downloading all drains at one time. Gives the illusion of a fast UI
       * Have data appear as user pans around screen
       Strategy: Use a boundary rectangle as a filter for download of drain
       */
