@@ -52,10 +52,21 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ## Docker (alternative to Build Setup)
 Skip the Build Setup and pull it all together with a container
-```
+``` bash
 cd adopt_a_drain/
 docker run -p 3000:3000 adopt_a_drain
 ```
-
+## Docker Compose
+Adopt_a_drain is configured for docker-compose. This is the easiest way to get set up.
+``` bash
+# clone adopt_a_drain repo
+$ git clone https://github.com/Wilfongjt/adopt_a_drain.git
+# move to app folder
+cd adopt_a_drain/
+# start docker-compose
+docker-compose up
+# stop docker-compose
+# docker-compose down
+```
 
 
